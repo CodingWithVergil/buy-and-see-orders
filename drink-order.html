@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drink order</title>
+    <link rel="stylesheet" href="drink-order.css" />
+  </head>
+  <body>
+    <main>
+      <section id="menu">
+        <div class="wrapper">
+          <article class="drink" data-price="10000" data-name="orange v1">
+            <img src="ice_orange-removebg-preview.png" alt="" />
+            <h3>Ice orange 1</h3>
+            <p><strong>RP 10.00</strong></p>
+            <div class="order-section">
+              <button class="minus order">-</button>
+              <p class="item">0</p>
+              <div class="plus order">+</div>
+            </div>
+          </article>
+
+          <article class="drink" data-price="15000" data-name="orange v2">
+            <img src="ice_orange2-removebg-preview.png" alt="" />
+            <h3>Ice orange 2</h3>
+            <p><strong>RP 15.00</strong></p>
+            <div class="order-section">
+              <button class="minus order">-</button>
+              <p class="item">0</p>
+              <div class="plus order">+</div>
+            </div>
+          </article>
+
+          <article class="drink" data-price="20000" data-name="orange v3">
+            <img src="ice_orange3-removebg-preview.png" alt="" />
+            <h3>Ice orange 3</h3>
+            <p><strong>RP 20.00</strong></p>
+            <div class="order-section">
+              <button class="minus order">-</button>
+              <p class="item">0</p>
+              <div class="plus order">+</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="wrapper">
+          <article class="drink" data-price="6000" data-name="Ice coffee">
+            <img src="ice_coffe-no-background.png" alt="Ice coffee" />
+            <h3>Ice coffee</h3>
+            <p><strong>RP 6.00</strong></p>
+            <div class="order-section">
+              <button class="minus order">-</button>
+              <p class="item">0</p>
+              <div class="plus order">+</div>
+            </div>
+          </article>
+
+          <article
+            class="drink"
+            data-price="8000"
+            data-name="Ice chocolate boba"
+          >
+            <img
+              src="Ice_chocalot_bobba-removebg-preview.png"
+              alt="Ice chocolate boba"
+            />
+            <h3>Ice chocolate boba</h3>
+            <p><strong>RP 8.00</strong></p>
+            <div class="order-section">
+              <button class="minus order">-</button>
+              <p class="item">0</p>
+              <div class="plus order">+</div>
+            </div>
+          </article>
+
+          <article class="drink" data-price="100000" data-name="ice Avocado">
+            <img src="Ice_avocado-removebg-preview.png" alt="ice Avocado" />
+            <h3>ice Avocado</h3>
+            <p><strong>RP 10.00</strong></p>
+            <div class="order-section">
+              <button class="minus order">-</button>
+              <p class="item">0</p>
+              <div class="plus order">+</div>
+            </div>
+          </article>
+        </div>
+        <button id="checkout" onclick="bill()">checkout all</button>
+      </section>
+      <div class="total">Total: Rp0</div>
+    </main>
+
+    <div id="confirmation-card">
+      <h1>So you order a</h1>
+      <div class="orders-box">
+        <ul class="orders"></ul>
+      </div>
+      <p class="final-bill">The Total is: Rp0</p>
+      <div class="forum-data">
+        <input id="name" type="text" placeholder="nama" />
+        <input type="text" placeholder="alamat" id="location" />
+        <input type="number" placeholder="nomor HP" id="phone-number" />
+      </div>
+      <div class="btn-confirm">
+        <button id="cancel" onclick="cancel()">cancel</button>
+        <button id="confirm" onclick="buy()">confirm buy</button>
+      </div>
+    </div>
+
+    <div class="overlay-dark" id="overlay-dark"></div>
+    <script src="drink-order.js"></script>
+  </body>
+</html>
